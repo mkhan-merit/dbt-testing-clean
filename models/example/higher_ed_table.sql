@@ -1,0 +1,2 @@
+SELECT id, created_date, current_program_status_c, is_highest_ed_level_0422_c, is_highest_ed_parent_0422_c, is_higher_ed_debt_current_0422_c, is_higher_ed_financial_aid_0422_c
+FROM lyrical-tooling-357318.salesforce.program_data_c

@@ -19,3 +19,37 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: higher_ed_table
+    description: "Higher education information for testing dbt features."
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: created_date
+        description: "The date this record was created"
+        tests:
+          - not_null
+      - name: current_program_status_c
+        description: "The current program status of the learner."
+        tests:
+          - not_null
+      - name: is_highest_ed_level_0422_c
+        description: "The highest education level for the learner as of 04/22."
+        tests:
+          - not_null
+      - name: is_highest_ed_parent_0422_c
+        description: "The highest education level for the learner's paretn as of 04/22"
+        tests:
+          - not_null
+      - name: is_higher_ed_debt_current_0422_c
+        description: "The current student debt of the learner as of 04/22"
+        tests:
+          - not_null
+      - name: is_higher_ed_financial_aid_0422_c
+        description: "The financial aid status for the learner as of 04/22"
+        tests:
+          - not_null
+  
